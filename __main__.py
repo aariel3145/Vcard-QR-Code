@@ -14,6 +14,7 @@ Programmer: Amy Ariel
 Future Notes:
     Add state machine to determine what data members have been set / added to card, update echo / export accordingly
         Check for non-input when adding/updating information
+    Create options for user to have multiple fields (ie multiple emails without a whole new work object)
 """
 
 import qrvcard_infoclass
