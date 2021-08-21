@@ -12,9 +12,8 @@ Programmer: Amy Ariel
 
 """
 Future Notes:
-    Add website field
-    Add social mediae
-    Add state machine to determine what data members have been set / added to card
+    Add state machine to determine what data members have been set / added to card, update echo / export accordingly
+        Check for non-input when adding/updating information
 """
 
 import qrvcard_infoclass
@@ -24,6 +23,7 @@ import qrvcard_functions
 userName = qrvcard_infoclass.name()
 userPersonal = qrvcard_infoclass.contact()
 userWork = qrvcard_infoclass.contact()
+userSocial = qrvcard_infoclass.social()
 
 # get all info
 
@@ -41,6 +41,8 @@ while(True):
     print("\t(g) Add/replace work email")
     print("\t(h) Add/replace personal address")
     print("\t(i) Add/replace work address")
+    print("\t(j) Add/replace website")
+    print("\t(k) Add/replace social media")
     print()
 
     choice = input("\t\tChoice? ")
@@ -73,5 +75,11 @@ while(True):
         userWork.setcity(str(input("Work address - city? ")))
         userWork.setstate(str(input("Work address - state? ")))
         userWork.setzip(str(input("Work address - zip code? ")))
+    elif choice == 'j':
+        userSocial.setwebsite(str(input("Website? ")))
+    elif choice == 'k':
+        userSocial.setfacebook(str(input("Facebook? ")))
+        userSocial.setlinkedin(str(input("LinkedIn? ")))
+        userSocial.setinstagram(str(input("Instagram? @")))
     else:
-        print("\t\tEnter option a-h")
+        print("\t\tEnter option a-k")

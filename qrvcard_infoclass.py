@@ -241,4 +241,98 @@ class contact:
     
         return self.zip
 # end contact class
+
+class social:
+    """
+    Summary: Class with user's social media
+        - website
+        - Facebook
+        - LinkedIn
+        - Instagram
+    """
+
+    def __init__(self):
+        """
+         Summary: constructor function for social object
+         Parameters: none, other than self
+         Return: nothing
+        """
     
+        self.website = '[WEBSITE]'
+        self.facebook = '[FACEBOOK]'
+        self.linkedin = '[LINKEDIN]'
+        self.instagramm = '[INSTAGRAM]'
+
+    def setwebsite(self, site):
+        """
+            Summary: sets website in object as variable site
+            Parameters: site - variable that holds object's website
+            Return: none
+        """
+
+            self.website = site
+    
+    def setfacebook(self, fb):
+        """
+            Summary: sets facebook in object as variable fb
+            Parameters: fb - variable that holds object's facebook
+            Return: none
+        """
+
+            self.facebook = fb
+
+    def setlinkedin(self, li):
+        """
+            Summary: sets linkedin in object as variable li
+            Parameters: li - variable that holds object's linkedin
+            Return: none
+        """
+
+            self.linkedin = li
+
+    def setinstagram(self, insta):
+        """
+            Summary: sets instagramm in object as variable insta
+            Parameters: insta - variable that holds object's instagram
+            Return: none
+        """
+
+            self.instagram = insta
+
+    def getwebsite(self):
+        """
+        Summary: gets object's website
+        Parameters: none, other than self
+        Return: variable type string of wesite
+        """
+    
+        return self.website
+
+    def getfacebook(self):
+        """
+        Summary: gets object's facebook
+        Parameters: none, other than self
+        Return: variable type string of facebook
+        """
+    
+        return self.facebook
+
+    def getlinkedin(self):
+        """
+        Summary: gets object's linkedin
+        Parameters: none, other than self
+        Return: variable type string of linkedin
+        """
+    
+        return self.linkedin
+
+    def getinstagram(self):
+        """
+        Summary: gets object's instagram
+        Parameters: none, other than self
+        Return: variable type string of instagram
+        """
+    
+        return self.instagram
+
+# end social class

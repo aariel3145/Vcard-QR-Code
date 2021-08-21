@@ -21,3 +21,6 @@ def echo(userName, userPersonal, userWork):
     print("Work: ")
     print(userWork.getstreet())
     print(f"{userWork.getcity()}, {userWork.getstate()} {userWork.getzip()}")
+    print("Website: ")
+    print(userSocial.getwebsite())
+    print(f"Facebook: {userSocial.getfacebook} / LinkedIn: {userSocial.getlinkedin} / Instagram: @{userSocial.getinstagram}")
