@@ -270,7 +270,7 @@ class social:
             Return: none
         """
 
-            self.website = site
+        self.website = site
     
     def setfacebook(self, fb):
         """
@@ -279,7 +279,7 @@ class social:
             Return: none
         """
 
-            self.facebook = fb
+        self.facebook = fb
 
     def setlinkedin(self, li):
         """
@@ -288,7 +288,7 @@ class social:
             Return: none
         """
 
-            self.linkedin = li
+        self.linkedin = li
 
     def setinstagram(self, insta):
         """
@@ -297,7 +297,7 @@ class social:
             Return: none
         """
 
-            self.instagram = insta
+        self.instagram = insta
 
     def getwebsite(self):
         """
